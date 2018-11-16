@@ -124,6 +124,11 @@
                     <artifactId>jacoco-maven-plugin</artifactId>
                     <version>${jacoco.plugin.version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>io.fabric8</groupId>
+                    <artifactId>docker-maven-plugin</artifactId>
+                    <version>${io.fabric8.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -162,6 +167,8 @@
         <debezium-connector-oracle.version>0.8.3.Final</debezium-connector-oracle.version>
         <org.testng.version>6.11</org.testng.version>
         <siddhi-store-rdbms.version>4.0.39</siddhi-store-rdbms.version>
+        <io.fabric8.version>0.27.2</io.fabric8.version>
+        <maven-failsafe-plugin.version>2.19.1</maven-failsafe-plugin.version>
         <siddhi-cdc-mysql.port>3309</siddhi-cdc-mysql.port>
         <docker.container.siddhi-cdc-mysql.ip>0.0.0.0</docker.container.siddhi-cdc-mysql.ip>
     </properties>
